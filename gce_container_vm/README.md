@@ -3,7 +3,7 @@ Module to [run containers on Compute Engine VMs](https://cloud.google.com/comput
 ## Example Usage
 
 ```
-module "config_server" {
+module "hello_world_server" {
   source               = "git@github.com:Lynty/terraform_modules.git//gce_container_vm"
   project_id           = "my-project-id"
   subnetwork_project   = "shared-vpc-dev"
