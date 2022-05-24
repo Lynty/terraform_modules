@@ -46,7 +46,7 @@ No requirements.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_client_email"></a> [client\_email](#input\_client\_email) | Service account email address | `string` | `""` | no |
-| <a name="input_container_env_vars"></a> [container\_env\_vars](#input\_container\_env\_vars) | List of environment variable mappings | `list` | <pre>[<br>  {<br>    "name": "ENV",<br>    "value": "dev"<br>  }<br>]</pre> | no |
+| <a name="input_container_env_vars"></a> [container\_env\_vars](#input\_container\_env\_vars) | List of environment variable mappings with the following structure:<br>    [{<br>      name  = "ENV\_VAR\_NAME"<br>      value = "ENV\_VAR\_VALUE"<br>    }] | `any` | n/a | yes |
 | <a name="input_container_image_name"></a> [container\_image\_name](#input\_container\_image\_name) | The name of the container image | `any` | n/a | yes |
 | <a name="input_cos_image_name"></a> [cos\_image\_name](#input\_cos\_image\_name) | The forced COS image to use instead of latest | `string` | `"cos-stable-97-16919-29-21"` | no |
 | <a name="input_instance_name"></a> [instance\_name](#input\_instance\_name) | The desired name to assign to the deployed instance | `any` | n/a | yes |

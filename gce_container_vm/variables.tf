@@ -43,11 +43,13 @@ variable "container_image_name" {
 }
 
 variable "container_env_vars" {
-  description = "List of environment variable mappings"
-  default = [{
-    name  = "ENV"
-    value = "dev"
-  }]
+  description = <<EOF
+  List of environment variable mappings with the following structure:
+    [{
+      name  = "ENV_VAR_NAME"
+      value = "ENV_VAR_VALUE"
+    }]
+  EOF
 }
 
 variable "cos_image_name" {
